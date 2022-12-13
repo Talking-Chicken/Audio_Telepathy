@@ -20,4 +20,13 @@ public class AudioSet {
 public class AudioCollection : ScriptableObject
 {
     [SerializeField] List<AudioSet> audioSets;
+
+    public AudioSet getAudioKeyByName(string audioName) {
+        foreach (AudioSet audioSet in audioSets) {
+            if (audioSet.AudioName.ToLower().Trim().Equals(audioName.ToLower().Trim()))
+                return audioSet;
+        }
+        Debug.LogWarning("cannot find " + audioName);
+        return null;
+    }
 }

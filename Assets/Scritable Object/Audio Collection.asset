@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0106845451256046af77f8fa9444fb2, type: 3}
   m_Name: Audio Collection
   m_EditorClassIdentifier: 
-  audioSets: []
+  audioSets:
+  - audioName: Greeting
+    audioKey:
+      Guid:
+        Data1: 534421893
+        Data2: 1099463163
+        Data3: 606744237
+        Data4: -546224712
+      Path: event:/Greeting

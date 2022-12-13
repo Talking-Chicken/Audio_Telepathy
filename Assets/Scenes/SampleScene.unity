@@ -269,10 +269,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1845483857
-      Data2: 1182782497
-      Data3: -795478610
-      Data4: -1108214243
+      Data1: -620066874
+      Data2: 1241723663
+      Data3: -1211775343
+      Data4: -1091144270
     Path: event:/RealityAmibience
   Event: 
   PlayEvent: 1
@@ -281,7 +281,7 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
 --- !u!65 &124585905
@@ -517,7 +517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Yes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -822,6 +822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c79bddfa54c454493541d5c5c2e8df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioCollect: {fileID: 11400000, guid: 4dfe805269f7ee04e959a61f2ebab788, type: 2}
+  playerGO: {fileID: 106055322}
 --- !u!1 &1065546978
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,7 +928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -202, y: -67}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509669386
@@ -986,14 +988,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1110,8 +1112,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 349, y: 272}
-  m_SizeDelta: {x: 800, y: 450}
+  m_AnchoredPosition: {x: 334.2698, y: 270.78384}
+  m_SizeDelta: {x: 810.8562, y: 455.0901}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1924177904
 GameObject:
@@ -1232,7 +1234,7 @@ MonoBehaviour:
       Data4: -546224712
     Path: event:/Greeting
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
