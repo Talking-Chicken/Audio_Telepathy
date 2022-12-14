@@ -22,19 +22,21 @@ MonoBehaviour:
         Data4: -546224712
       Path: event:/Greeting
     nextSetName: Q1
-    yesSetName: BoxA
-    noSetName: BoxB
+    yesSetName: Q1
+    noSetName: Q1
+    workingStage: 0
   - audioName: Q1
     audioKey:
       Guid:
-        Data1: 27415527
-        Data2: 1240589498
-        Data3: -1309790020
-        Data4: -1434794494
+        Data1: 1173024342
+        Data2: 1121914669
+        Data3: 1040177537
+        Data4: 71950643
       Path: event:/Q1
     nextSetName: Q1
     yesSetName: BoxA
     noSetName: BoxB
+    workingStage: 1
   - audioName: BoxA
     audioKey:
       Guid:
@@ -43,9 +45,10 @@ MonoBehaviour:
         Data3: 1969758381
         Data4: 795507171
       Path: event:/BoxA
-    nextSetName: Q1
-    yesSetName: BoxA
-    noSetName: BoxB
+    nextSetName: Correct 1
+    yesSetName: Correct 1
+    noSetName: Incorrect 1
+    workingStage: 1
   - audioName: BoxB
     audioKey:
       Guid:
@@ -54,6 +57,31 @@ MonoBehaviour:
         Data3: 862597798
         Data4: -927341998
       Path: event:/BoxB
+    nextSetName: Correct 1
+    yesSetName: Correct 1
+    noSetName: Incorrect 1
+    workingStage: 1
+  - audioName: Correct 1
+    audioKey:
+      Guid:
+        Data1: -259717542
+        Data2: 1093947687
+        Data3: 1557476030
+        Data4: 2139132137
+      Path: event:/Correct 1
     nextSetName: Q1
     yesSetName: BoxA
     noSetName: BoxB
+    workingStage: 2
+  - audioName: Incorrect 1
+    audioKey:
+      Guid:
+        Data1: 1700400910
+        Data2: 1299878189
+        Data3: -1643730544
+        Data4: 1540023298
+      Path: event:/Incorrect 1
+    nextSetName: Q1
+    yesSetName: BoxA
+    noSetName: BoxB
+    workingStage: 2
