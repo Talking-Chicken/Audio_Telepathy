@@ -9,8 +9,14 @@ public class AsistanceManager : MonoBehaviour
     [SerializeField] private AudioCollection audioCollect;
     [SerializeField] private GameObject playerGO;
     private EventInstance eventInstance = new EventInstance();
+    private AudioSet currentSet;
+
+    //getters & setters
+    public AudioSet CurrentSet {get=>currentSet; set=>currentSet=value;}
+
     void Start()
     {
+        currentSet = audioCollect.AudioSets[0];
     }
 
     void Update()

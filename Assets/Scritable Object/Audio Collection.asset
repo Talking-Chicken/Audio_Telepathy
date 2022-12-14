@@ -21,3 +21,39 @@ MonoBehaviour:
         Data3: 606744237
         Data4: -546224712
       Path: event:/Greeting
+    nextSetName: Q1
+    yesSetName: BoxA
+    noSetName: BoxB
+  - audioName: Q1
+    audioKey:
+      Guid:
+        Data1: 27415527
+        Data2: 1240589498
+        Data3: -1309790020
+        Data4: -1434794494
+      Path: event:/Q1
+    nextSetName: Q1
+    yesSetName: BoxA
+    noSetName: BoxB
+  - audioName: BoxA
+    audioKey:
+      Guid:
+        Data1: 1568289235
+        Data2: 1182888387
+        Data3: 1969758381
+        Data4: 795507171
+      Path: event:/BoxA
+    nextSetName: Q1
+    yesSetName: BoxA
+    noSetName: BoxB
+  - audioName: BoxB
+    audioKey:
+      Guid:
+        Data1: 971995904
+        Data2: 1261666179
+        Data3: 862597798
+        Data4: -927341998
+      Path: event:/BoxB
+    nextSetName: Q1
+    yesSetName: BoxA
+    noSetName: BoxB
