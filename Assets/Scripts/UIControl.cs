@@ -45,6 +45,8 @@ public class UIControl : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
     }
 
     public void PlayAudio (int index) {
@@ -67,6 +69,7 @@ public class UIControl : MonoBehaviour
     public void Yes () {
         playAudioByName(manager.CurrentSet.YesSet);
         manager.CurrentSet = audioCollect.getAudioSetByName(manager.CurrentSet.YesSet);
+        manager.ChangeStage(audioCollect.getAudioSetByName(manager.CurrentSet.YesSet).WorkingStage);
     }
 
     public void No () {
@@ -92,7 +95,14 @@ public class UIControl : MonoBehaviour
             break;
 
             case Stage.Q2:
-
+                if (GetDropdownString(Answer1).ToLower().Trim().Equals("FileB".ToLower().Trim())
+                    &&
+                    GetDropdownString(Answer2).ToLower().Trim().Equals("FileA".ToLower().Trim()))
+                {
+                    Yes();
+                } else {
+                    No();
+                }
                 break;
         }
     }

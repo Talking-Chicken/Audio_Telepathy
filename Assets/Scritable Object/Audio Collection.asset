@@ -22,7 +22,7 @@ MonoBehaviour:
         Data4: -546224712
       Path: event:/Greeting
     nextSetName: Q1
-    yesSetName: Q1
+    yesSetName: Q2
     noSetName: Q1
     workingStage: 0
   - audioName: Q1
@@ -69,9 +69,9 @@ MonoBehaviour:
         Data3: 1557476030
         Data4: 2139132137
       Path: event:/Correct 1
-    nextSetName: Q1
-    yesSetName: BoxA
-    noSetName: BoxB
+    nextSetName: End Correct
+    yesSetName: End Correct
+    noSetName: End Incorrect
     workingStage: 2
   - audioName: Incorrect 1
     audioKey:
@@ -81,7 +81,67 @@ MonoBehaviour:
         Data3: -1643730544
         Data4: 1540023298
       Path: event:/Incorrect 1
+    nextSetName: End Correct
+    yesSetName: End Correct
+    noSetName: End Incorrect
+    workingStage: 2
+  - audioName: Q2
+    audioKey:
+      Guid:
+        Data1: -1688113680
+        Data2: 1327609489
+        Data3: -156302929
+        Data4: -1945085303
+      Path: event:/Q2
+    nextSetName: Q2
+    yesSetName: Q2
+    noSetName: Q2
+    workingStage: 2
+  - audioName: FileA
+    audioKey:
+      Guid:
+        Data1: -1763775000
+        Data2: 1299115467
+        Data3: 1625364869
+        Data4: 543984510
+      Path: event:/FileA
+    nextSetName: End Correct
+    yesSetName: End Correct
+    noSetName: End Incorrect
+    workingStage: 2
+  - audioName: FileB
+    audioKey:
+      Guid:
+        Data1: 1152405589
+        Data2: 1336305142
+        Data3: -742525280
+        Data4: -1950590405
+      Path: event:/FileB
+    nextSetName: End Correct
+    yesSetName: End Correct
+    noSetName: End Incorrect
+    workingStage: 2
+  - audioName: End Correct
+    audioKey:
+      Guid:
+        Data1: -293521861
+        Data2: 1241638908
+        Data3: -857910141
+        Data4: 1828112038
+      Path: event:/Correcr2
     nextSetName: Q1
     yesSetName: BoxA
     noSetName: BoxB
-    workingStage: 2
+    workingStage: 3
+  - audioName: End Incorrect
+    audioKey:
+      Guid:
+        Data1: 1141313238
+        Data2: 1182437596
+        Data3: -1771856243
+        Data4: 478706717
+      Path: event:/Incorrect2
+    nextSetName: Q1
+    yesSetName: BoxA
+    noSetName: BoxB
+    workingStage: 3
