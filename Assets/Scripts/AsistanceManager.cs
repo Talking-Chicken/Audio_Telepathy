@@ -123,8 +123,8 @@ public class AsistanceManager : MonoBehaviour
                     uiControl.AudioDes1.text = "FileA";
                     uiControl.AudioDes2.text = "FileB";
 
-                    uiControl.Des1.text = " is the murder of the friend";
-                    uiControl.Des2.text = " got the key";
+                    uiControl.Des1.text = " murdered the friend";
+                    uiControl.Des2.text = " got the key at the end";
 
                     uiControl.Answer1.ClearOptions();
                     uiControl.Answer1.options.Add(new TMP_Dropdown.OptionData() {text = "FileA"});

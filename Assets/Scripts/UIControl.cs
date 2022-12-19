@@ -68,8 +68,8 @@ public class UIControl : MonoBehaviour
 
     public void Yes () {
         playAudioByName(manager.CurrentSet.YesSet);
-        manager.CurrentSet = audioCollect.getAudioSetByName(manager.CurrentSet.YesSet);
         manager.ChangeStage(audioCollect.getAudioSetByName(manager.CurrentSet.YesSet).WorkingStage);
+        manager.CurrentSet = audioCollect.getAudioSetByName(manager.CurrentSet.YesSet);
     }
 
     public void No () {
